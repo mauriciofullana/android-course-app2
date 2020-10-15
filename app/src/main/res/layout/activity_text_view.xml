@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".TextViewActivity">
+    
+    <TextView
+        android:id="@+id/txt_1"
+        android:text="Learning TextView"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        android:textStyle="italic|bold"
+        android:textAllCaps="true"
+        android:background="#000"
+        android:padding="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:text="Learning TextView \nhttps://www.google.com"
+        android:padding="16sp"
+        android:autoLink="web"
+        android:textColorLink="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:text="Learning TextView \nhttps://goo.gl/maps/exVYq4HHisz9TYbf8\ntest@gmail.com"
+        android:padding="16sp"
+        android:autoLink="web|map|email"
+        android:textColorLink="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:text="Font example TextView"
+        android:padding="16sp"
+        android:fontFamily="@font/roboto_bolditalic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
