@@ -26,4 +26,10 @@
         android:layout_height="wrap_content"
         android:text="Learning Radio Button" />
 
+    <Button
+        android:id="@+id/btn_ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learning Toggle Button" />
+
 </LinearLayout>

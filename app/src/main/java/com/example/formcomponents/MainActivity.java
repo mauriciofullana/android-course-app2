@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnTextView, btnEditText, btnRadioButton;
+    private Button btnTextView, btnEditText, btnRadioButton, btnToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnRadioButton = findViewById(R.id.btn_RadioButton);
         btnRadioButton.setOnClickListener(this);
+
+        btnToggle = findViewById(R.id.btn_ToggleButton);
+        btnToggle.setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_RadioButton:
                 startActivity(new Intent(MainActivity.this, RadioButtonActivity.class));
+                break;
+            case R.id.btn_ToggleButton:
+                startActivity(new Intent(MainActivity.this, ToggleActivity.class));
                 break;
         }
     }
