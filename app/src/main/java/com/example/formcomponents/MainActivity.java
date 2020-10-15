@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnTextView, btnEditText;
+    private Button btnTextView, btnEditText, btnRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnEditText = findViewById(R.id.btn_EditText);
         btnEditText.setOnClickListener(this);
+
+        btnRadioButton = findViewById(R.id.btn_RadioButton);
+        btnRadioButton.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_EditText:
                 startActivity(new Intent(MainActivity.this, EditTextActivity.class));
+                break;
+            case R.id.btn_RadioButton:
+                startActivity(new Intent(MainActivity.this, RadioButtonActivity.class));
                 break;
         }
     }
