@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnTextView, btnEditText, btnRadioButton, btnToggle, btnSwitch;
+    private Button btnTextView, btnEditText, btnRadioButton, btnToggle, btnSwitch, btnCheckbok;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSwitch = findViewById(R.id.btn_Switch);
         btnSwitch.setOnClickListener(this);
+
+        btnCheckbok = findViewById(R.id.btn_Checkbox);
+        btnCheckbok.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_Switch:
                 startActivity(new Intent(MainActivity.this, SwitchActivity.class));
+                break;
+            case R.id.btn_Checkbox:
+                startActivity(new Intent(MainActivity.this, CheckboxActivity.class));
                 break;
         }
     }

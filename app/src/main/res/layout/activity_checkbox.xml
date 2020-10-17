@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CheckboxActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select options"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ch_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1" />
+
+        <CheckBox
+            android:id="@+id/ch_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2" />
+
+        <CheckBox
+            android:id="@+id/ch_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/ch_moreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More options?" />
+
+
+    <LinearLayout
+        android:id="@+id/wrapper_moreOptions"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ch_more_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More 1" />
+
+        <CheckBox
+            android:id="@+id/ch_more_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More 2" />
+
+        <CheckBox
+            android:id="@+id/ch_more_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More 3" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:text="Accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
