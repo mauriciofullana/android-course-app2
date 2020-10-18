@@ -44,4 +44,10 @@
         android:layout_height="wrap_content"
         android:text="Learning Checkbox" />
 
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learning Spinner" />
+
 </LinearLayout>
