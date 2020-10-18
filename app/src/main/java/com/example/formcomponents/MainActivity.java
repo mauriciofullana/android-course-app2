@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnTextView, btnEditText, btnRadioButton, btnToggle, btnSwitch, btnCheckbok, btnSpinner;
+    private Button btnTextView, btnEditText, btnRadioButton, btnToggle, btnSwitch, btnCheckbok, btnSpinner, btnDateTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSpinner = findViewById(R.id.btn_spinner);
         btnSpinner.setOnClickListener(this);
+
+        btnDateTime = findViewById(R.id.btn_datetime);
+        btnDateTime.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_spinner:
                 startActivity(new Intent(MainActivity.this, SpinnerActivity.class));
+                break;
+            case R.id.btn_datetime:
+                startActivity(new Intent(MainActivity.this, DateTimeActivity.class));
                 break;
         }
     }
