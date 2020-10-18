@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Form Components</string>
+
+    <string-array name="programmingLanguages">
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+    </string-array>
 </resources>

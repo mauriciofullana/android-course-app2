@@ -12,7 +12,8 @@ import android.widget.Toast;
 public class SpinnerActivity extends AppCompatActivity {
 
     private Spinner spinner;
-    private String[] programmingLanguages = {"C", "C++", "C#", "Java", "JavaScript"};
+//    private String[] programmingLanguages = {"C", "C++", "C#", "Java", "JavaScript"};
+        private String[] programmingLanguages;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +21,10 @@ public class SpinnerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_spinner);
 
         spinner = findViewById(R.id.spinner);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, programmingLanguages);
-        spinner.setAdapter(arrayAdapter);
+        programmingLanguages = getResources().getStringArray(R.array.programmingLanguages);
+
+//        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, programmingLanguages);
+//        spinner.setAdapter(arrayAdapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
